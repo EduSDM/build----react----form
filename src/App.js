@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Input nome="Login" />
     </div>
   );
 }
 
-export default App;
+
+export function Input(props) {
+  return (
+
+
+    <div className="container">
+
+
+
+<h1> {props.nome} </h1>
+
+        <label for="uname">
+          <b>Username</b>
+        </label>
+        <input type="text" placeholder="Enter Username" name="uname" required />
+
+        <label for="psw">
+          <b>Password</b>
+        </label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+
+        <button   type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" /> Remember
+          me
+        </label>
+
+    
+    </div>
+  );
+}

@@ -1,38 +1,47 @@
+#root,
+html,
+body {
+  height: 100%;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
+  align-items: center;
+  background-image: url(https://img.freepik.com/fotos-gratis/um-fundo-suave-com-desfoque-de-gradiente-vintage-com-um-poco-em-cor-pastel-usado-como-estudio-apresentacao-de-produto-e-banner_1258-70686.jpg);
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input {
+  padding: 15px;
+  font: 12px arial, verdana, helvetica, sans-serif;
+  border-collapse: collapse;
+  color: #009900;
+}
+button {
+  margin: 30px;
+}
+@media only screen and (max-width: 513px) {
+  .App, .container {
+    height: 50%;
+    width: 50%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 1400px) {
+  .App {
+    height: 100%;
+    width: 100%;
   }
 }
